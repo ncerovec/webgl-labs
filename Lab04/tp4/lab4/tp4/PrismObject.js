@@ -163,16 +163,16 @@ PrismObject.prototype.initBuffers = function()
 				var yTex2 = (i+1)*(1/this.stacks);	//y2-texture image coordinate 
 
 				//add texture point for back-first point
-				this.texCoords.push(xTex2, yTex1);
-
-				//add texture point for back-second point
 				this.texCoords.push(xTex1, yTex1);
 
+				//add texture point for back-second point
+				this.texCoords.push(xTex2, yTex1);
+
 				//add texture point for front-first point
-				this.texCoords.push(xTex2, yTex2);
+				this.texCoords.push(xTex1, yTex2);
 
 				//add texture point for front-second point
-				this.texCoords.push(xTex1, yTex2);
+				this.texCoords.push(xTex2, yTex2);
 
 			//END: Generate texture coordinates
 		}
